@@ -1,8 +1,12 @@
 name: test
 on: push
 jobs:
-  my-job:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      # Node versions list
+      matrix:
+        node-version: [16.x]
     steps:
       - name: npm install
         run: | 
