@@ -7,6 +7,4 @@ jobs:
       - name: npm install
         run: | 
           make install
-      - name: linter
-        run: |
           make lint
