@@ -16,9 +16,8 @@ const brainCalc = () => {
     let iter = false;
 
     for(let i = 0; i < 3; i += 1) {
-        const getRandomNum = Math.floor(Math.random() * 10);
-        let num1 = getRandomNum;
-        let num2 = getRandomNum;
+        let num1 = Math.floor(Math.random() * 10);
+        let num2 = Math.floor(Math.random() * 10);
         const sum = num1 + num2;
         console.log (`Question: ${num1} + ${num2} `);
         const answer = Number(readlineSync.question(`Your answer: ` ));

@@ -19,7 +19,8 @@
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
-    "brain-calc": "brain-calc.js"
+    "brain-calc": "brain-calc.js",
+    "brain-gcd": "brain-gcd.js"
   },
   "homepage": "https://github.com/Dan-oss/frontend-project-lvl1#readme",
   "dependencies": {

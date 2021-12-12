@@ -16,10 +16,10 @@ const brainEven = () => {
     let iter = false;
 
     for(let i = 0; i < 3; i += 1) {
-        const getRandomNum = Math.floor(Math.random() * 10);
-        console.log (`Question: ${getRandomNum} `);
+        let num = Math.floor(Math.random() * 10);
+        console.log (`Question: ${num} `);
         const answer = readlineSync.question(`Your answer: ` );
-        let num = getRandomNum;
+        
     if (num % 2 === 0 && answer === 'yes') {
         iter = true;
         console.log('Correct');
