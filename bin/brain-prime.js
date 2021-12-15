@@ -12,11 +12,11 @@ const returnName = () => {
 
 const prime = () => {
   let iter = false;
-  let result = 'yes';
-  for (let j = 0; j < 3; j += 1) {
+  for (let i = 0; i < 3; i += 1) {
+    let result = 'yes';
     const num = Math.floor(Math.random() * (20 - 3)) + 3;
-    for (let i = 2; i <= num / 2; i += 1) {
-      if (num % i === 0) {
+    for (let j = 2; j < num / 2; j += 1) {
+      if (num % j === 0) {
         result = 'no';
         break;
       }
@@ -29,7 +29,7 @@ const prime = () => {
     }
     if (answer !== result) {
       console.log(
-        `${answer} is wrong answer ;(. Correct answer was ${result}. \nLet's try again, ${userName}!`,
+        `${answer} is wrong answer ;(. Correct answer was ${result}. \nLet's try again, ${userName}!`
       );
       iter = false;
       break;
