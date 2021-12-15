@@ -26,7 +26,7 @@ const progression = () => {
     };
     const arrProgression = getArrProgression();
 
-    const positionInArr = () => Math.floor(Math.random() * 8);
+    const positionInArr = () => Math.floor(Math.random() * (5 - 1)) + 1;
     const position = positionInArr();
 
     // eslint-disable-next-line no-shadow
