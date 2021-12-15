@@ -29,7 +29,7 @@ const prime = () => {
     }
     if (answer !== result) {
       console.log(
-        `${answer} is wrong answer ;(. Correct answer was ${result}. \nLet's try again, ${userName}!`
+        `${answer} is wrong answer ;(. Correct answer was ${result}. \nLet's try again, ${userName}!`,
       );
       iter = false;
       break;
