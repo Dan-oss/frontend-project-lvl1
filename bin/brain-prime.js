@@ -15,7 +15,7 @@ const prime = () => {
   for (let i = 0; i < 3; i += 1) {
     let result = 'yes';
     const num = Math.floor(Math.random() * (20 - 3)) + 3;
-    for (let j = 2; j < num / 2; j += 1) {
+    for (let j = 2; j < num; j += 1) {
       if (num % j === 0) {
         result = 'no';
         break;
