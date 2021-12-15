@@ -20,7 +20,7 @@ const brainGsd = () => {
     const num1 = Math.floor(Math.random() * (100 - 50)) + 50;
     const num2 = Math.floor(Math.random() * 50);
     let divisor = 1;
-    for (let i = 2; i < num1 / 2; i += 1) {
+    for (let i = 2; i < num2; i += 1) {
       if (num1 % i === 0 && num2 % i === 0) {
         divisor = i;
       }
