@@ -13,14 +13,14 @@ const returnName = () => {
 const progression = () => {
   let iter = false;
 
-  for (let j = 0; j < 3; j += 1) {
+  for (let i = 0; i < 3; i += 1) {
     const getArrProgression = () => {
       const arr1 = [];
       const arrLength = Math.floor(Math.random() * (10 - 6)) + 6;
       const begin = Math.floor(Math.random() * (5 - 1)) + 1;
       const step = Math.floor(Math.random() * (5 - 2)) + 2;
-      for (let i = begin; arr1.length < arrLength; i += step) {
-        arr1.push(i);
+      for (let j = begin; arr1.length < arrLength; j += step) {
+        arr1.push(j);
       }
       return arr1; // возвращаем массив чисел в арифметической прогрессии
     };
