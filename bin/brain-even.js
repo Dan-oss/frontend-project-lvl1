@@ -1,10 +1,12 @@
 #!/usr/bin/env node
-//import {} from '../src/even.js';
-//import returnName from '../src/cli.js';
-import readlineSync from "readline-sync";
-const userName = readlineSync.question("May I have your name? ");
+// import {} from '../src/even.js';
+// import returnName from '../src/cli.js';
+import readlineSync from 'readline-sync';
+
+const userName = readlineSync.question('May I have your name? ');
 const returnName = () => {
-  console.log("Welcome to the Brain Games!");
+  console.log('Welcome to the Brain Games!');
+  // eslint-disable-next-line no-unused-expressions
   userName;
   console.log(`Hello ${userName}!`);
 };
@@ -18,27 +20,27 @@ const brainEven = () => {
   for (let i = 0; i < 3; i += 1) {
     const num = Math.floor(Math.random() * 10);
     console.log(`Question: ${num} `);
-    const answer = readlineSync.question(`Your answer: `);
+    const answer = readlineSync.question('Your answer: ');
 
-    if (num % 2 === 0 && answer === "yes") {
+    if (num % 2 === 0 && answer === 'yes') {
       iter = true;
-      console.log("Correct");
+      console.log('Correct');
     }
 
-    if (num % 2 !== 0 && answer === "no") {
+    if (num % 2 !== 0 && answer === 'no') {
       iter = true;
-      console.log("Correct");
+      console.log('Correct');
     }
-    if (num % 2 === 0 && answer !== "yes") {
+    if (num % 2 === 0 && answer !== 'yes') {
       console.log(
-        `'no' is wrong answer ;(. Correct answer was 'yes'. \nLet's try again, ${userName}!`
+        `'no' is wrong answer ;(. Correct answer was 'yes'. \nLet's try again, ${userName}!`,
       );
       iter = false;
       break;
     }
     if (num % 2 !== 0 && answer !== 'no') {
       console.log(
-        `'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${userName}!`
+        `'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${userName}!`,
       );
       iter = false;
       break;
