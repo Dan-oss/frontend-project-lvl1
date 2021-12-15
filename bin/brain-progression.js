@@ -1,15 +1,13 @@
 #!/usr/bin/env node
 
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
-const userName = readlineSync.question("May I have your name? ");
+const userName = readlineSync.question('May I have your name? ');
 const returnName = () => {
-  console.log("Welcome to the Brain Games!");
+  console.log('Welcome to the Brain Games!');
   userName;
   console.log(`Hello ${userName}!`);
 };
-
-
 
 const progression = () => {
   let iter = false;
