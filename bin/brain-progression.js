@@ -7,7 +7,7 @@ const returnName = () => {
   console.log('Welcome to the Brain Games!');
   // eslint-disable-next-line no-unused-expressions
   userName;
-  console.log(`Hello ${userName}!`);
+  console.log(`Hello, ${userName}!`);
 };
 
 const progression = () => {
