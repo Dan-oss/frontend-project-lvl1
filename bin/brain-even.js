@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// import {} from '../src/even.js';
-// import returnName from '../src/cli.js';
+/* eslint-disable no-alert, no-console */
+/* eslint-disable import/prefer-default-export */
 import readlineSync from 'readline-sync';
 
 const userName = readlineSync.question('May I have your name? ');
