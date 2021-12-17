@@ -3,8 +3,8 @@
 // import returnName from '../src/cli.js';
 import readlineSync from 'readline-sync';
 
-const randomNum = (max, min) => Math.floor(Math.random() * (max - min)) + min;
-const calc = () => {
+const randomNum = (max, min) => Math.floor(Math.random() * (max - min)) + min; // это пойдет в cli.js
+const calc = () => { // это пойдет в новый файл, описывающий именно эту игру 
   const max = 10;
   const min = 1;
   const num1 = randomNum(max, min);
@@ -16,7 +16,7 @@ const calc = () => {
 };
 const rulesGame = 'What is the result of the expression?';
 
-const gamePlay = () => {
+const gamePlay = () => { // это описание общей игровой логики и пойдет в index.js
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!`);
