@@ -3,42 +3,38 @@
 // import returnName from '../src/cli.js';
 import readlineSync from 'readline-sync';
 
-const userName = readlineSync.question('May I have your name? ');
-const returnName = () => {
+const randomNum = (max, min) => Math.floor(Math.random() * (max - min)) + min;
+const calc = () => {
+  const max = 10;
+  const min = 1;
+  const num1 = randomNum(max, min);
+  const num2 = randomNum(max, min);
+  const answer = num1 + num2;
+  const question = `Question: ${num1} + ${num2} `;
+  const arr = [question, answer];
+  return arr;
+};
+const rulesGame = 'What is the result of the expression?';
+
+const gamePlay = () => {
   console.log('Welcome to the Brain Games!');
-  // eslint-disable-next-line no-unused-expressions
-  userName;
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!`);
-};
-
-returnName();
-console.log('What is the result of the expression?');
-
-const brainCalc = () => {
-  let iter = false;
-
+  console.log(rulesGame);
   for (let i = 0; i < 3; i += 1) {
-    const num1 = Math.floor(Math.random() * 10);
-    const num2 = Math.floor(Math.random() * 10);
-    const sum = num1 + num2;
-    console.log(`Question: ${num1} + ${num2} `);
+    const [gameQuestions, rigthAnswer] = calc();
+    console.log(gameQuestions);
     const answer = Number(readlineSync.question('Your answer: '));
-    if (answer === sum) {
-      iter = true;
-      console.log('Correct');
-    }
-    if (answer !== sum) {
-      console.log(
-        `${answer} is wrong answer ;(. Correct answer was ${sum}. \nLet's try again, ${userName}!`,
+    if (answer !== rigthAnswer) {
+      return console.log(
+        `${answer} is wrong answer ;(. Correct answer was ${rigthAnswer}. \nLet's try again, ${userName}!`,
       );
-      iter = false;
-      break;
     }
+    console.log('Correct');
   }
 
-  if (iter === true) {
-    console.log(`Congratulations, ${userName}!`);
-  }
+  return console.log(`Congratulations, ${userName}!`);
 };
 
-console.log(brainCalc());
+gamePlay();
+

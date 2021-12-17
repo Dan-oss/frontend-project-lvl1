@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 
 const userName = readlineSync.question('May I have your name? ');
-const returnName = () => {
+const getName  = () => {
   console.log('Welcome to the Brain Games!');
   // eslint-disable-next-line no-unused-expressions
   userName;
@@ -40,6 +40,6 @@ const prime = () => {
   }
 };
 
-returnName();
+getName ();
 console.log('Answer "yes" if given number is prime. Otherwise answer "no"');
 prime();
