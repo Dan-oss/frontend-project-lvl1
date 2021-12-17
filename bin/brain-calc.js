@@ -4,7 +4,7 @@
 import readlineSync from 'readline-sync';
 
 const randomNum = (max, min) => Math.floor(Math.random() * (max - min)) + min; // это пойдет в cli.js
-const calc = () => { // это пойдет в новый файл, описывающий именно эту игру 
+const gameDate = () => { // это пойдет в новый файл, описывающий именно эту игру 
   const max = 10;
   const min = 1;
   const num1 = randomNum(max, min);
@@ -22,7 +22,7 @@ const gamePlay = () => { // это описание общей игровой л
   console.log(`Hello ${userName}!`);
   console.log(rulesGame);
   for (let i = 0; i < 3; i += 1) {
-    const [gameQuestions, rigthAnswer] = calc();
+    const [gameQuestions, rigthAnswer] = gameDate();
     console.log(gameQuestions);
     const answer = Number(readlineSync.question('Your answer: '));
     if (answer !== rigthAnswer) {
