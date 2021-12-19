@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 export const gamePlay = (gameDate, rulesGame) => {
-  console.log("Welcome to the Brain Games!");
+  console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!`);
   console.log(rulesGame);
@@ -14,7 +14,7 @@ export const gamePlay = (gameDate, rulesGame) => {
     const answer = readlineSync.question('Your answer: ');
     if (answer !== rigthAnswer) {
       return console.log(
-        `${answer} is wrong answer ;(. Correct answer was ${rigthAnswer}. \nLet's try again, ${userName}!`
+        `${answer} is wrong answer ;(. Correct answer was ${rigthAnswer}. \nLet's try again, ${userName}!`,
       );
     }
     console.log('Correct');

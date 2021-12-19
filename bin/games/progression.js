@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
-import { randomNum } from "../../src/cli.js";
-import { gamePlay } from "../../src/index.js";
+import { randomNum } from '../../src/cli.js';
+import { gamePlay } from '../../src/index.js';
 
 const gameDate = () => {
   const getArrProgression = () => {
@@ -18,9 +18,9 @@ const gameDate = () => {
   const arrProgression = getArrProgression();
   const positionInArr = randomNum(5, 1);
 
-  const hideValue = (positionInArr, arrProgression) => {
-    const hiddenPosition = arrProgression.slice();
-    hiddenPosition[positionInArr] = '..';
+  const hideValue = (position, progression) => {
+    const hiddenPosition = progression.slice();
+    hiddenPosition[position] = '..';
     return hiddenPosition.join(' '); // заменяем число в массиве символами "**" и возвращаем строку
   };
   const answer = String(arrProgression[positionInArr]);
