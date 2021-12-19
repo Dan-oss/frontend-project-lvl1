@@ -16,6 +16,5 @@ const gameDate = () => {
 };
 const rulesGame = 'What is the result of the expression?';
 
-const gameCalculator = (gamePlay(gameDate, rulesGame));
 
 export default gameCalculator;

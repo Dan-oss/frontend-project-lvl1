@@ -3,4 +3,4 @@
 /* eslint-disable import/prefer-default-export */
 import gameProgression from './games/progression.js';
 
-gameProgression();
+gameProgression;

@@ -9,10 +9,10 @@ const gameDate = () => {
   const min = 3;
   const num1 = randomNum(max, min);
   const answer = () => {
-    let result = "yes";
+    let result = 'yes';
     for (let j = 2; j < num1; j += 1) {
       if (num1 % j === 0) {
-        result = "no";
+        result = 'no';
         break;
       }
     }
