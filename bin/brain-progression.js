@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
-import gameProgression from './games/progression.js';
+import { gameDate, rulesGame } from './games/progression.js';
+import gamePlay from '../src/index.js';
 
-gameProgression;
+gamePlay(gameDate, rulesGame);

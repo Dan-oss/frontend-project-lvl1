@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
-import gameCalculator from './games/calc.js';
+import { gameDate, rulesGame } from './games/calc.js';
+import gamePlay from '../src/index.js';
 
-gameCalculator;
+gamePlay(gameDate, rulesGame);

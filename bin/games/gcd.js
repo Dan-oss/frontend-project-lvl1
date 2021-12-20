@@ -1,9 +1,8 @@
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
 import { randomNum } from '../../src/cli.js';
-import { gamePlay } from '../../src/index.js';
 
-const gameDate = () => {
+export const gameDate = () => {
   const max = 50;
   const min = 1;
   const num1 = randomNum(max, min);
@@ -22,8 +21,4 @@ const gameDate = () => {
   const arr = [question, answer(num1, num2)];
   return arr;
 };
-const rulesGame = 'Find the greatest common divisor of given numbers.';
-
-const gameGcd = gamePlay(gameDate, rulesGame);
-
-export default gameGcd;
+export const rulesGame = 'Find the greatest common divisor of given numbers.';

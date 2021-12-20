@@ -1,9 +1,8 @@
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
 import { randomNum } from '../../src/cli.js';
-import { gamePlay } from '../../src/index.js';
 
-const gameDate = () => {
+export const gameDate = () => {
   const getArrProgression = () => {
     const arr1 = [];
     const arrLength = randomNum(10, 6);
@@ -27,8 +26,4 @@ const gameDate = () => {
   const arr = [question, answer];
   return arr;
 };
-const rulesGame = 'What number is missing in the progression?';
-
-const gameProgression = gamePlay(gameDate, rulesGame);
-
-export default gameProgression;
+export const rulesGame = 'What number is missing in the progression?';

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
-import gamePrime from './games/prime.js';
+import { gameDate, rulesGame } from './games/prime.js';
+import gamePlay from '../src/index.js';
 
-gamePrime;
+gamePlay(gameDate, rulesGame);

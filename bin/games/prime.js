@@ -1,9 +1,8 @@
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
 import { randomNum } from '../../src/cli.js';
-import { gamePlay } from '../../src/index.js';
 
-const gameDate = () => {
+export const gameDate = () => {
   const max = 20;
   const min = 3;
   const num1 = randomNum(max, min);
@@ -21,8 +20,4 @@ const gameDate = () => {
   const arr = [question, answer(num1)];
   return arr;
 };
-const rulesGame = 'Answer "yes" if given number is prime. Otherwise answer "no"';
-
-const gamePrime = gamePlay(gameDate, rulesGame);
-
-export default gamePrime;
+export const rulesGame = 'Answer "yes" if given number is prime. Otherwise answer "no"';

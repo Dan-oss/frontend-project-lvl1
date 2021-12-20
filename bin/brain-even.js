@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
-import gameEven from './games/even.js';
+import { gameDate, rulesGame } from './games/even.js';
+import gamePlay from '../src/index.js';
 
-gameEven;
+gamePlay(gameDate, rulesGame);
