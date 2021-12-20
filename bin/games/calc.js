@@ -1,7 +1,7 @@
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
 import { randomNum } from '../../src/cli.js';
-import { gamePlay } from '../../src/index.js';
+import gamePlay from '../../src/index.js';
 
 const gameDate = () => {
   const max = 10;
@@ -15,6 +15,6 @@ const gameDate = () => {
 };
 const rulesGame = 'What is the result of the expression?';
 
-const gameCalculator = (gamePlay(gameDate, rulesGame));
+const gameCalculator = gamePlay(gameDate, rulesGame);
 
 export default gameCalculator;

@@ -2,7 +2,7 @@
 /* eslint-disable import/prefer-default-export */
 import readlineSync from 'readline-sync';
 
-export const gamePlay = (gameDate, rulesGame) => {
+const gamePlay = (gameDate, rulesGame) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!`);
@@ -21,3 +21,4 @@ export const gamePlay = (gameDate, rulesGame) => {
 
   return console.log(`Congratulations, ${userName}!`);
 };
+export default gamePlay;
