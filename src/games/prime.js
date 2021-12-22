@@ -1,6 +1,6 @@
 import { randomNum } from '../cli.js';
 
-export const gameDate = () => {
+export const getGameData = () => {
   const max = 20;
   const min = 3;
   const num1 = randomNum(max, min);

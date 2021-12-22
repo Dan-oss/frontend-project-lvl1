@@ -1,6 +1,6 @@
 import { randomNum } from '../cli.js';
 
-export const gameDate = () => {
+export const getGameData = () => {
   const getArrProgression = () => {
     const arr1 = [];
     const arrLength = randomNum(10, 6);
