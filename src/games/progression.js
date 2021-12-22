@@ -1,6 +1,6 @@
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
-import { randomNum } from '../../src/cli.js';
+import { randomNum } from '../cli.js';
 
 export const gameDate = () => {
   const getArrProgression = () => {
