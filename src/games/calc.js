@@ -1,3 +1,4 @@
+import gamePlay from '../index.js';
 import randomNum from '../utils.js';
 
 const getRandomSymbol = () => {
@@ -6,7 +7,7 @@ const getRandomSymbol = () => {
   return random;
 };
 
-export const getGameData = () => {
+const getGameData = () => {
   const randomSymbol = getRandomSymbol();
   const max = 10;
   const min = 1;
@@ -27,4 +28,11 @@ export const getGameData = () => {
   const data = [question, answer];
   return data;
 };
-export const ruleGame = 'What is the result of the expression?';
+const ruleGame = 'What is the result of the expression?';
+
+const calculate = () => {
+  const isGame = gamePlay(getGameData, ruleGame);
+  return isGame;
+};
+
+export default calculate();
