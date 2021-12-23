@@ -1,4 +1,4 @@
-import { randomNum } from '../cli.js';
+import randomNum from '../utils.js';
 
 const getRandomSymbol = () => {
   const arrOfSymbols = ['+', '-', '*'];

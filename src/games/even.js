@@ -1,4 +1,4 @@
-import { randomNum } from '../cli.js';
+import randomNum from '../utils.js';
 
 const isEven = (number) => number % 2 === 0;
 export const getGameData = () => {

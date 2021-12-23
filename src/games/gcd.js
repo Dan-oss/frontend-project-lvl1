@@ -1,4 +1,4 @@
-import { randomNum } from '../cli.js';
+import randomNum from '../utils.js';
 
 const getGCD = (a, b) => (a !== 0 ? getGCD(b % a, a) : b);
 export const getGameData = () => {

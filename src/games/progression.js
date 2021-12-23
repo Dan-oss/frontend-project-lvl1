@@ -1,4 +1,4 @@
-import { randomNum } from '../cli.js';
+import randomNum from '../utils.js';
 
 export const getGameData = () => {
   const getArrProgression = () => {
