@@ -2,14 +2,14 @@ import { randomNum } from '../cli.js';
 
 export const getGameData = () => {
   const getArrProgression = () => {
-    const arr1 = [];
+    const progression = [];
     const arrLength = randomNum(10, 6);
     const begin = randomNum(5, 1);
     const step = randomNum(4, 2);
-    for (let j = begin; arr1.length < arrLength; j += step) {
-      arr1.push(j);
+    for (let j = begin; progression.length < arrLength; j += step) {
+      progression.push(j);
     }
-    return arr1; // возвращаем массив чисел в арифметической прогрессии
+    return progression; // возвращаем массив чисел в арифметической прогрессии
   };
   const arrProgression = getArrProgression();
   const positionInArr = randomNum(5, 1);
