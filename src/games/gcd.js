@@ -16,7 +16,7 @@ export const getGameData = () => {
   };
   const question = `Question: ${num1} ${num2} `;
 
-  const arr = [question, answer(num1, num2)];
-  return arr;
+  const data = [question, answer];
+  return data;
 };
 export const rulesGame = 'Find the greatest common divisor of given numbers.';

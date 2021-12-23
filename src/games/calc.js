@@ -1,8 +1,8 @@
 import { randomNum } from '../cli.js';
 
 const getRandomSymbol = () => {
-  const arr = ['+', '-', '*'];
-  const random = arr[randomNum(0, arr.length - 1)];
+  const arrOfSymbols = ['+', '-', '*'];
+  const random = arrOfSymbols[randomNum(0, arrOfSymbols.length - 1)];
   return random;
 };
 
@@ -24,7 +24,7 @@ export const getGameData = () => {
   };
   const answer = getAnswer();
   const question = `Question: ${num1} ${randomSymbol} ${num2} `;
-  const arr = [question, answer];
-  return arr;
+  const data = [question, answer];
+  return data;
 };
 export const rulesGame = 'What is the result of the expression?';
