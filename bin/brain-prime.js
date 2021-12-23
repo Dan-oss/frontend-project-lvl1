@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { getGameData, rulesGame } from '../src/games/prime.js';
+import { getGameData, ruleGame } from '../src/games/prime.js';
 import gamePlay from '../src/index.js';
 
-gamePlay(getGameData, rulesGame);
+gamePlay(getGameData, ruleGame);
