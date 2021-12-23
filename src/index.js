@@ -18,6 +18,6 @@ const gamePlay = (gameData, ruleGame) => {
     console.log('Correct');
   }
 
-  return console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 };
 export default gamePlay;
