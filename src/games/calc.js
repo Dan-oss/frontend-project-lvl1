@@ -27,4 +27,4 @@ export const getGameData = () => {
   const data = [question, answer];
   return data;
 };
-export const rulesGame = 'What is the result of the expression?';
+export const ruleGame = 'What is the result of the expression?';

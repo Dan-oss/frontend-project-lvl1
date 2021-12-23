@@ -12,4 +12,4 @@ export const getGameData = () => {
   const data = [question, answer];
   return data;
 };
-export const rulesGame = 'Find the greatest common divisor of given numbers.';
+export const ruleGame = 'Find the greatest common divisor of given numbers.';

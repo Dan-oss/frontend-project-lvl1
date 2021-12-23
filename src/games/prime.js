@@ -18,4 +18,4 @@ export const getGameData = () => {
   const data = [question, answer(num1)];
   return data;
 };
-export const rulesGame = 'Answer "yes" if given number is prime. Otherwise answer "no"';
+export const ruleGame = 'Answer "yes" if given number is prime. Otherwise answer "no"';

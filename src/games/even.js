@@ -10,4 +10,4 @@ export const getGameData = () => {
   const data = [question, answer];
   return data;
 };
-export const rulesGame = 'Answer "yes" if the number is even, otherwise answer "no".';
+export const ruleGame = 'Answer "yes" if the number is even, otherwise answer "no".';

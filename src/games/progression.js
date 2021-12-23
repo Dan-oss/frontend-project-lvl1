@@ -24,4 +24,4 @@ export const getGameData = () => {
   const data = [question, answer];
   return data;
 };
-export const rulesGame = 'What number is missing in the progression?';
+export const ruleGame = 'What number is missing in the progression?';
