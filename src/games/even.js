@@ -1,10 +1,10 @@
 import { randomNum } from '../cli.js';
 
+const isEven = (number) => number % 2 === 0;
 export const getGameData = () => {
   const max = 10;
   const min = 1;
   const num = randomNum(max, min);
-  const isEven = (number) => number % 2 === 0;
   const answer = isEven(num) ? 'yes' : 'no';
   const question = `Question: ${num}`;
   const data = [question, answer];
