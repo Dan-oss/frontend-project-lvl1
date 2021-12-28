@@ -3,7 +3,7 @@ import randomNum from '../utils.js';
 export const getGameData = () => {
   const max = 20;
   const min = 3;
-  const num1 = randomNum(max, min);
+  const num1 = randomNum(min, max);
   const answer = () => {
     let result = 'yes';
     for (let j = 2; j < num1; j += 1) {

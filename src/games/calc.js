@@ -9,10 +9,10 @@ const getRandomSymbol = () => {
 
 const getGameData = () => {
   const randomSymbol = getRandomSymbol();
-  const max = 10;
   const min = 1;
-  const num1 = randomNum(max, min);
-  const num2 = randomNum(max, min);
+  const max = 10;
+  const num1 = randomNum(min, max);
+  const num2 = randomNum(min, max);
   const getAnswer = () => {
     let result = 0;
     if (randomSymbol === '*') {
