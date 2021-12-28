@@ -36,8 +36,8 @@ const getGameData = () => {
 
   const answer = getAnswer(num1, num2, randomSymbol);
   const question = `Question: ${num1} ${randomSymbol} ${num2} `;
-  const data = [question, answer];
-  return data;
+  const gameData = [question, answer];
+  return gameData;
 };
 const ruleGame = 'What is the result of the expression?';
 

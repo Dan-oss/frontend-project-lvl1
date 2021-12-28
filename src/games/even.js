@@ -7,7 +7,7 @@ export const getGameData = () => {
   const num = randomNum(min, max);
   const answer = isEven(num) ? 'yes' : 'no';
   const question = `Question: ${num}`;
-  const data = [question, answer];
-  return data;
+  const gameData = [question, answer];
+  return gameData;
 };
 export const ruleGame = 'Answer "yes" if the number is even, otherwise answer "no".';

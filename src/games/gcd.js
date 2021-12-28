@@ -9,7 +9,7 @@ export const getGameData = () => {
   const answer = String(getGCD(num1, num2));
   const question = `Question: ${num1} ${num2} `;
 
-  const data = [question, answer];
-  return data;
+  const gameData = [question, answer];
+  return gameData;
 };
 export const ruleGame = 'Find the greatest common divisor of given numbers.';

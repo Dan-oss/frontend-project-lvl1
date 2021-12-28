@@ -21,7 +21,7 @@ export const getGameData = () => {
   };
   const answer = String(arrProgression[positionInArr]);
   const question = `Question: ${hideValue(positionInArr, arrProgression)} `;
-  const data = [question, answer];
-  return data;
+  const gameData = [question, answer];
+  return gameData;
 };
 export const ruleGame = 'What number is missing in the progression?';

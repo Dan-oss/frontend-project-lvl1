@@ -15,7 +15,7 @@ export const getGameData = () => {
     return result;
   };
   const question = `Question: ${num1}`;
-  const data = [question, answer(num1)];
-  return data;
+  const gameData = [question, answer(num1)];
+  return gameData;
 };
 export const ruleGame = 'Answer "yes" if given number is prime. Otherwise answer "no"';
