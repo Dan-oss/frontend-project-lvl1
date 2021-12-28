@@ -30,9 +30,6 @@ const getGameData = () => {
 };
 const ruleGame = 'What is the result of the expression?';
 
-const calculate = () => {
-  const isGame = gamePlay(getGameData, ruleGame);
-  return isGame;
-};
+const calculate = () => gamePlay(getGameData, ruleGame);
 
 export default calculate();

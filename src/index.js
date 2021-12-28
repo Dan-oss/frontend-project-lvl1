@@ -11,13 +11,14 @@ const gamePlay = (gameData, ruleGame) => {
     console.log(gameQuestions);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== rigthAnswer) {
-      return console.log(
+      console.log(
         `${answer} is wrong answer ;(. Correct answer was ${rigthAnswer}. \nLet's try again, ${userName}!`,
       );
     }
     console.log('Correct');
   }
 
-  console.log(`Congratulations, ${userName}!`);
+  return console.log(`Congratulations, ${userName}!`);
 };
+
 export default gamePlay;
