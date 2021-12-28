@@ -6,7 +6,7 @@ const getRandomSymbol = () => {
   const random = arrOfSymbols[randomNum(0, arrOfSymbols.length - 1)];
   return random;
 };
-const getAnswer = (num1, num2, randomSymbol) => {
+const getAnswer = (num1, num2, randomSymbol) => { // эта функция возвращает правильный ответ
   let result = 0;
   switch (randomSymbol) {
     case '*':
@@ -18,9 +18,11 @@ const getAnswer = (num1, num2, randomSymbol) => {
     case '-':
       result = num1 - num2;
       break;
-    default:
+    case '/':
       result = num1 / num2;
       break;
+    default:
+      result = null;
   }
   return String(result);
 };
