@@ -8,12 +8,20 @@ const getRandomSymbol = () => {
 };
 const getAnswer = (num1, num2, randomSymbol) => {
   let result = 0;
-  if (randomSymbol === '*') {
-    result = num1 * num2;
+  switch (randomSymbol) {
+    case '*':
+      result = num1 * num2;
+      break;
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    default:
+      result = num1 / num2;
+      break;
   }
-  if (randomSymbol === '-') {
-    result = num1 - num2;
-  } else result = num1 + num2;
   return String(result);
 };
 
@@ -33,4 +41,4 @@ const ruleGame = 'What is the result of the expression?';
 
 export const calculate = () => gamePlay(getGameData, ruleGame);
 
-export default calculate();
+export default calculate;
