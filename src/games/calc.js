@@ -24,7 +24,7 @@ const getAnswer = (num1, num2, randomSymbol) => { // эта функция во�
     default:
       result = null;
   }
-  return String(result);
+  return result;
 };
 
 const getGameData = () => {
@@ -34,7 +34,7 @@ const getGameData = () => {
   const num1 = randomNum(min, max);
   const num2 = randomNum(min, max);
 
-  const answer = getAnswer(num1, num2, randomSymbol);
+  const answer = String(getAnswer(num1, num2, randomSymbol));
   const question = `Question: ${num1} ${randomSymbol} ${num2} `;
   const gameData = [question, answer];
   return gameData;
