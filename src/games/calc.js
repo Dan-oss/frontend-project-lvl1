@@ -32,7 +32,7 @@ const getGameData = () => {
   const num1 = randomNum(5, 10);
   const num2 = randomNum(1, 5);
 
-  const answer = String(getAnswer(num1, operator, num2));
+  const answer = String(getAnswer(num1, num2, operator));
   const question = `Question: ${num1} ${operator} ${num2} `;
   const gameData = [question, answer];
   return gameData;
