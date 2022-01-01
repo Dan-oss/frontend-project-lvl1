@@ -41,6 +41,6 @@ const getGameData = () => {
 };
 const ruleGame = 'What is the result of the expression?';
 
-export const calculate = () => gamePlay(getGameData, ruleGame);
+const calculate = () => gamePlay(getGameData, ruleGame);
 
 export default calculate;

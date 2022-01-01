@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { getGameData, ruleGame } from '../src/games/even.js';
-import gamePlay from '../src/index.js';
+import even from '../src/games/even.js';
 
-gamePlay(getGameData, ruleGame);
+even();

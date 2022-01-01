@@ -1,3 +1,4 @@
+import gamePlay from '../index.js';
 import randomNum from '../utils.js';
 
 const getArrProgression = () => {
@@ -10,8 +11,7 @@ const getArrProgression = () => {
   }
   return progression; // возвращаем массив чисел в арифметической прогрессии
 };
-
-export const getGameData = () => {
+const getGameData = () => {
   const arrProgression = getArrProgression();
   const positionInArr = randomNum(1, 5);
   const answer = String(arrProgression[positionInArr]);
@@ -20,4 +20,8 @@ export const getGameData = () => {
   const gameData = [question, answer];
   return gameData;
 };
-export const ruleGame = 'What number is missing in the progression?';
+const ruleGame = 'What number is missing in the progression?';
+
+const progressionGame = () => gamePlay(getGameData, ruleGame);
+
+export default progressionGame;
