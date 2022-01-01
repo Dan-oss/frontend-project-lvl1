@@ -9,7 +9,6 @@ const getGameData = () => {
   const num2 = randomNum(min, max);
   const answer = String(getGCD(num1, num2));
   const question = `Question: ${num1} ${num2} `;
-
   const gameData = [question, answer];
   return gameData;
 };
