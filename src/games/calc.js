@@ -29,10 +29,8 @@ const getAnswer = (num1, num2, randomSymbol) => { // эта функция во�
 
 const getGameData = () => {
   const operator = getRandomOperator();
-  const min = 1;
-  const max = 10;
-  const num1 = randomNum(min, max);
-  const num2 = randomNum(min, max);
+  const num1 = randomNum(5, 10);
+  const num2 = randomNum(1, 5);
 
   const answer = String(getAnswer(num1, num2, operator));
   const question = `Question: ${num1} ${operator} ${num2} `;
