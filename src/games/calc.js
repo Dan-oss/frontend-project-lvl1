@@ -2,7 +2,7 @@ import gamePlay from '../index.js';
 import randomNum from '../utils.js';
 
 const getRandomOperator = () => {
-  const arrOfOperator = ['+', '-', '*', '/'];
+  const arrOfOperator = ['+', '-', '*'];
   const random = arrOfOperator[randomNum(0, arrOfOperator.length - 1)];
   return random;
 };
@@ -17,9 +17,6 @@ const getAnswer = (num1, num2, randomSymbol) => { // эта функция во�
       break;
     case '-':
       result = num1 - num2;
-      break;
-    case '/':
-      result = num1 / num2;
       break;
     default:
       result = null;
